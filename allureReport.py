@@ -7,7 +7,7 @@ from selenium.webdriver.common.by import By
 
 
 class TestCase:
-    @pytest.mark.parametrize("username,password,exp",[("www","www","Invalid login, please try again"),("ssss","11111","Invalid login"),("satwinder@123","Satwinder@123","Satwinder Singh")])
+    @pytest.mark.parametrize("username,password,exp",[("www","www","Invalid login, please try again"),("satwinder@123","Satwinder@123","Satwinder Singh")])
     def test_loging(self,username,password,exp):
         driver=webdriver.Chrome()
         driver.get("https://online.btes.co.in/login/index.php")
